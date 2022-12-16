@@ -1,0 +1,35 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: auto;
+  height: 100vh;
+  > div:first-child {
+    > p {
+      text-align: justify;
+      font-variant: small-caps;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: arial;
+      color: black;
+    }
+  }
+  > div:last-child {
+    > button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      background-color: brown;
+      border: none;
+      color: #fff;
+      font-family: serif;
+      font-weight: bold;
+      border-bottom: 3px solid rgb(71, 14, 14);
+      transition: 0.3s;
+      &:hover {
+        background-color: rgb(206, 64, 64);
+      }
+    }
+  }
+}

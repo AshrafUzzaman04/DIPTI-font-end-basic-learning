@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="container d-flex vh-100">
+      <div class="col-12 m-auto">
+        <h2 class="display-6 text-white text-center mb-4 design">
+          <p class="animate__animated animate__fadeInLeftBig">
+            Creative
+            <a href="#" data-replace="SingUp Form"
+              ><span class="text-white">SingUp Form</span></a
+            >
+          </p>
+        </h2>
+
+        <!-- form div started here -->
+        <div class="col-12 col-md-6 col-lg-5 m-auto formBgColor p-4">
+          <form id="myForm" class="animate__animated animate__flipInX">
+            <!-- username -->
+            <div class="text-white mt-2 mb-4">
+              <input
+                type="text"
+                placeholder="Username"
+                id="username"
+                class="form-control bg-transparent text-white p-2"
+              />
+              <div
+                id="errorDiv"
+                class="invalid-feedback text-danger m-0"
+                style="color: rgb(255, 162, 162) !important"
+              ></div>
+            </div>
+            <!-- email -->
+            <div class="= text-white my-4">
+              <input
+                type="email"
+                placeholder="Email"
+                id="email"
+                class="form-control bg-transparent text-white p-2"
+              />
+              <div
+                id="errorEmail"
+                class="invalid-feedback text-danger"
+                style="color: rgb(255, 162, 162) !important"
+              ></div>
+            </div>
+            <!-- password -->
+            <div class="text-white my-4">
+              <input
+                type="password"
+                placeholder="Password"
+                id="password"
+                class="form-control bg-transparent text-white p-2"
+              />
+              <div
+                id="errorPassword"
+                class="invalid-feedback text-danger"
+                style="color: rgb(255, 162, 162) !important"
+              ></div>
+            </div>
+            <!-- confirmPassword -->
+            <div class="text-white my-4">
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                id="confirmPassword"
+                class="form-control bg-transparent text-white p-2"
+              />
+              <div
+                id="errorConfirmPassword"
+                class="invalid-feedback text-danger"
+                style="color: rgb(255, 162, 162) !important"
+              ></div>
+            </div>
+            <!-- checkbox input -->
+            <div class="col-12 mt-3">
+              <input type="checkbox" id="formCheckbox" />
+              <label for="formCheckbox" class="text-white"
+                >I Agree To The Tarms & Conditions</label
+              >
+            </div>
+
+            <!-- submit button input -->
+            <div>
+              <input
+                type="submit"
+                value="Sing Up"
+                class="submit col-12 my-3"
+                id="singUpButton"
+                disabled
+              />
+            </div>
+          </form>
+
+          <!-- Login or not  -->
+          <div class="col-12 text-center">
+            <span class="text-white"
+              >Don't have an Account?
+              <a
+                href="#"
+                style="
+                  text-decoration: none;
+                  color: white;
+                  font-weight: bold;
+                  cursor: pointer;
+                "
+                class="text-decoration-underline"
+                >Login Now!</a
+              ></span
+            >
+          </div>
+        </div>
+
+        <!-- copyright div started here -->
+        <div
+          class="col-12 text-white m-auto text-center mt-4 animate__animated animate__zoomInRight"
+        >
+          <p style="font-size: 14px">
+            &copy; 2022 Ashraf Uz Mahim Singup Form. All rights are resrved |
+            Design By Ashraf Uz Mahim
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/script.js"></script>
+  </body>
+</html>
